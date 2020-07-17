@@ -1,0 +1,134 @@
+/* Poner el color correspondiente */
+
+:root {
+    --white: #fff;    
+    --font-text: 'Montserrat';
+    --color-green: #cbe346;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url(assets/group.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+
+}
+
+
+img {
+    width: 37px;
+    height: 37px;
+    object-fit: contain;
+    margin: 0 0 0 36px;
+}
+
+.vr {
+    width: 1px;    
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 105px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font-text);
+}
+
+.menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;    
+    margin-left: 55px;
+}
+
+.menu-language {
+    display: flex;
+    justify-content: right;
+    align-content: right;
+    
+}
+
+.menu-element-language {
+    list-style: none;
+    margin: 0 10px 0 0;  
+    font-size: 13px;
+    letter-spacing: 1.14px;       
+    font-weight: bold;    
+    color: var(--white);
+    font-family: var(--font-text);
+}
+
+.menu-element {     
+    list-style: none;
+    margin-right: 35px;
+    color: var(--white);        
+    font-family: var(--font-text);
+    white-space: normal;
+    list-style: none;
+    font-size: 16px;    
+    letter-spacing: 1.4px;    
+}
+
+
+.main-headline {
+    box-sizing: border-box;
+    width: 55%;
+    text-align: left;
+    margin: 180px 0 0 173px;
+}
+
+.headline-message {
+    font-family: var(--font-text);
+    font-size: 53px;
+    color: var(--white);
+    letter-spacing: -0.05px;
+    line-height: 68px;
+    font-weight: normal;    
+}
+
+.headline-tennis {
+    font-family: var(--font-text);
+    font-size: 53px;
+    color: var(--color-green);
+    letter-spacing: -0.05px;
+    line-height: 68px;
+    font-weight: bold;    
+}
+
+.transparent-button {
+    display: flex;    
+    align-items: center;
+    font-family: var(--font-text);
+    font-size: 13px;
+    letter-spacing: 1.01px;
+    font-weight: bold;
+    padding: 15px 49px 15px 30px;
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+    border-radius: 50px;        
+}
+
+.transparent-button img {
+    width: 30px;
+    margin: 0;
+}
+
+
