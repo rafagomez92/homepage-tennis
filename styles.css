@@ -10,6 +10,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--color-green);
 }
 
 header {
@@ -213,7 +214,12 @@ a {
 
 span {
     font-size: 40px;
-    color: var(--color-green);    
+    color: var(--color-green); 
+    margin: 0;       
+}
+
+.bg-white {
+    background-color: var(--white);
 }
 
 .owl-nav {
@@ -266,4 +272,17 @@ span {
     top: 60%;
     left: 59%;
     transform: translate(-50%, -50%);
+}
+
+
+.player {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+footer {    
+    height: 78px;
+    background-color: var(--color-green);
 }
