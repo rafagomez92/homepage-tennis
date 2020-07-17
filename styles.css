@@ -20,12 +20,12 @@ header {
 }
 
 .container {
-    max-width: 1440px;
-    margin: auto;
+    max-width: 1440px; 
+    margin: 0;
 }
 
 
-img {
+.logo {
     width: 37px;
     height: 37px;
     object-fit: contain;
@@ -199,7 +199,71 @@ a {
     color: var(--black);
 }
 
+.img-carousel {
+    width: 530px;
+    height: 468px;
+}
 
+.img-carousel-2 {
+    width: 288px !important;
+    height: 344px !important;
+    margin-top: 40px !important;
+    color: var(--color-green) !important;    
+}
 
+span {
+    font-size: 40px;
+    color: var(--color-green);    
+}
 
+.owl-nav {
+    text-align: center;
+    
+}
 
+.element-carousel {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.text-title-element {
+    font-size: 50px;
+    letter-spacing: -0.06px;
+    width: 50%;
+    text-align: left;
+    word-wrap: break-word;           
+    color: var(--white);
+    font-family: var(--font-text);
+    position: absolute;
+    top: 38px;
+    left: 200px;
+}
+.text-title-element-2 {
+    font-size: 50px;
+    letter-spacing: -0.06px;    
+    text-align: left;
+    word-wrap: break-word;           
+    color: var(--color-green);
+    font-family: var(--font-text);
+    position: absolute;
+    top: 38px;
+    left: 20px;    
+}
+.text-bold {
+    font-size: 50px !important;
+    font-weight: bold;
+    color: var(--white) !important;
+}
+.text-center-element {
+    font-size: 18px;
+    letter-spacing: -0.06px;
+    line-height: 32px;
+    text-align: left !important;
+    color: var(--white);
+    font-family: var(--font-text);
+    position: absolute;
+    top: 60%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+}

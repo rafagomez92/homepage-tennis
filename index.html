@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <!-- Para el carrousel de las imagenes he utilizado owl carousel, estos son sus archivos para su funcionamiento -->
-
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="styles.css">
     <title>Homepage - Tennis</title>
@@ -46,7 +47,7 @@
             </div>
         </div>
     </header>
-    <section class="">
+    <section>
         <div class="container history">
             <div class="row">
                 <div class="col">
@@ -64,9 +65,49 @@
                 </div>
             </div>
         </div>
-
-
+        <div class="container-carousel">            
+            <div class="owl-carousel">
+                <div class="element-carousel">                    
+                    <img class="img-carousel" src="assets/ball-color-court-1405355.png" alt="raqueta" />
+                    <div class="text-title-element">Nuestras <span class="text-bold">Raquetas</span></div>
+                    <div class="text-center-element">Conoce nuestras raquetas y aprende a jugar tenis como un profesional.</div>
+                </div>
+                <div class="element-carousel">                    
+                    <img class="img-carousel-2" src="assets/group-10.png" alt="raqueta" />
+                    <div class="text-title-element-2">1</div>                    
+                </div>
+                <div class="element-carousel">                    
+                    <img class="img-carousel-2" src="assets/group-10.png" alt="raqueta" />
+                    <div class="text-title-element-2">2</div>                    
+                </div>
+                <div class="element-carousel">                    
+                    <img class="img-carousel-2" src="assets/group-10.png" alt="raqueta" />
+                    <div class="text-title-element-2">3</div>                    
+                </div>
+                
+              </div>
+        </div>
     </section>
-
+    
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:2
+                }
+            }
+        })            
+    </script>
 </body>
 </html>
