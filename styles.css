@@ -2,6 +2,7 @@
 
 :root {
     --white: #fff;    
+    --black: #1e2335;
     --font-text: 'Montserrat';
     --color-green: #cbe346;
 }
@@ -12,7 +13,7 @@ body {
 }
 
 header {
-    background: url(assets/group.jpg);
+    background: url(assets/group@2x.jpg);
     height: 100vh;
     background-size: cover;
     
@@ -21,7 +22,6 @@ header {
 .container {
     max-width: 1440px;
     margin: auto;
-
 }
 
 
@@ -128,7 +128,78 @@ a {
 
 .transparent-button img {
     width: 30px;
-    margin: 0;
+    margin: 2px;
 }
+
+/* button history background gray */
+.row {
+    text-align: center;
+}
+
+.col {    
+    box-sizing: border-box;
+    width: 420px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.history {
+    height: 329px;
+    background: #f3f4f8;
+}
+
+.history-tennis {
+    font-size: 15px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-right: 33px;
+    color: var(--color-green);
+    letter-spacing: 1.87;
+    font-family: var(--font-text);
+}
+
+.history-products {
+    margin-top: 108px;
+    word-wrap: break-word;           
+    text-align: left !important;
+    font-family: var(--font-text);
+    font-size: 40px;
+    letter-spacing: -0.06px;
+    color: var(--black);
+}
+
+.history-products-secondary {
+    width: 85%;
+    font-size: 18px;
+    letter-spacing: 0.51px;
+    color: #787878;
+    text-align: left;
+    font-family: var(--font-text);
+}
+
+.transparent-button-history {
+    justify-content: space-between;
+    margin-top: 240px;
+    margin-left: 30px;
+    display: flex;       
+    align-items: center;
+    font-family: var(--font-text);
+    font-size: 13px;
+    letter-spacing: 1.01px;
+    font-weight: bold;
+    padding: 15px 49px 15px 30px;
+    background-color: transparent;
+    color: var(--black);
+    border-color: var(--black);
+    border-radius: 50px;        
+}
+
+.transparent-button-history a {
+    color: var(--black);
+}
+
+
+
 
 
