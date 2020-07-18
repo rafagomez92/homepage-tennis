@@ -1,110 +1,73 @@
-/* Poner el color correspondiente */
-
 :root {
-    --white: #fff;    
-    --black: #1e2335;
     --font-text: 'Montserrat';
+    --white: #fff;
+    --black: ##1e2335;
     --color-green: #cbe346;
 }
 
-body {
+
+body {      
     margin: 0;
-    padding: 0;
-    background-color: var(--color-green);
+    font-family: var(--font-text);
+    background: #f3f4f8;
+}
+
+
+ li {
+    list-style: none;
+    margin-right: 25px;
+    
 }
 
 header {
-    background: url(assets/group@2x.jpg);
+    background: url(assets/group.jpg);
     height: 100vh;
     background-size: cover;
+}
+
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
     
 }
-
-.container {
-    max-width: 1440px; 
-    margin: 0;
-}
-
 
 .logo {
     width: 37px;
-    height: 37px;
-    object-fit: contain;
-    margin: 0 0 0 36px;
-}
-
-.vr {
-    width: 1px;    
-    background-color: var(--white);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 105px;
-}
-
-a {
-    text-decoration: none;
-    color: var(--white);
-    font-family: var(--font-text);
+    height: 37px;    
 }
 
 .menu {
-    display: flex;
-    justify-content: start;
+    display: flex;    
+    justify-content: left;
     align-items: center;
 }
 
-.menu-list {
-    display: flex;    
-    margin-left: 55px;
-}
-
-.menu-language {
+.lista {
     display: flex;
-    justify-content: right;
-    align-content: right;
-    
-}
-
-.menu-element-language {
-    list-style: none;
-    margin: 0 10px 0 0;  
-    font-size: 13px;
-    letter-spacing: 1.14px;       
-    font-weight: bold;    
     color: var(--white);
-    font-family: var(--font-text);
+    font-weight: bold;
 }
 
-.menu-element {     
-    list-style: none;
-    margin-right: 35px;
-    color: var(--white);        
-    font-family: var(--font-text);
-    white-space: normal;
-    list-style: none;
-    font-size: 16px;    
-    letter-spacing: 1.4px;    
+.idiomas {
+    margin-left: 50px;
 }
 
-
-.main-headline {
-    box-sizing: border-box;
-    width: 55%;
+.titular {
     text-align: left;
-    margin: 180px 0 0 173px;
+    margin-top: 200px;    
 }
 
-.headline-message {
-    font-family: var(--font-text);
+.title-titular {
     font-size: 53px;
     color: var(--white);
     letter-spacing: -0.05px;
     line-height: 68px;
-    font-weight: normal;    
+    font-weight: normal; 
 }
 
-.headline-tennis {
+
+.tennis-titular {
     font-family: var(--font-text);
     font-size: 53px;
     color: var(--color-green);
@@ -113,7 +76,8 @@ a {
     font-weight: bold;    
 }
 
-.transparent-button {
+
+.boton-titular {    
     display: flex;    
     align-items: center;
     font-family: var(--font-text);
@@ -122,82 +86,87 @@ a {
     font-weight: bold;
     padding: 15px 49px 15px 30px;
     background-color: transparent;
-    color: var(--white);
+    color: var(--white) !important;
     border-color: var(--white);
-    border-radius: 50px;        
+    border-radius: 50px;     
 }
 
-.transparent-button img {
-    width: 30px;
-    margin: 2px;
+.text-titular-acerca {
+    color: var(--white) !important;
 }
 
-/* button history background gray */
+.menu-icon {
+    display: none; 
+}
+
+
 .row {
-    text-align: center;
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: center;
 }
 
 .col {    
-    box-sizing: border-box;
-    width: 420px;
-    display: inline-block;
-    vertical-align: top;
+    width: 29%;
 }
 
-.history {
-    height: 329px;
+.boton-col {
+    margin-top: 180px;
+}
+
+.contenedor-historia {
     background: #f3f4f8;
 }
 
-.history-tennis {
-    font-size: 15px;
-    text-align: right;
-    font-weight: bold;
-    margin-top: 120px;
-    margin-right: 33px;
-    color: var(--color-green);
-    letter-spacing: 1.87;
-    font-family: var(--font-text);
-}
 
-.history-products {
-    margin-top: 108px;
-    word-wrap: break-word;           
-    text-align: left !important;
-    font-family: var(--font-text);
-    font-size: 40px;
-    letter-spacing: -0.06px;
-    color: var(--black);
-}
-
-.history-products-secondary {
-    width: 85%;
-    font-size: 18px;
-    letter-spacing: 0.51px;
-    color: #787878;
-    text-align: left;
-    font-family: var(--font-text);
-}
-
-.transparent-button-history {
-    justify-content: space-between;
-    margin-top: 240px;
-    margin-left: 30px;
+.boton-historia {        
+    justify-content: space-between;    
     display: flex;       
     align-items: center;
     font-family: var(--font-text);
     font-size: 13px;
     letter-spacing: 1.01px;
     font-weight: bold;
-    padding: 15px 49px 15px 30px;
-    background-color: transparent;
+    padding: 10px 60px 10px 30px;
+    background: transparent;
     color: var(--black);
     border-color: var(--black);
-    border-radius: 50px;        
+    border-radius: 50px;     
 }
 
-.transparent-button-history a {
+.tennis-historia {
+    margin-top: 75px;                 
+    margin-right: 10px;
+    font-size: 15px;
+    text-align: right;
+    font-weight: bold;    
+    color: var(--color-green);
+    letter-spacing: 1.87;
+    font-family: var(--font-text);
+}
+
+.accesorios-primario { 
+    margin-top: 70px;                 
+    text-align: left !important;
+    font-family: var(--font-text);
+    font-size: 30px;
+    letter-spacing: -0.06px;
     color: var(--black);
+}
+
+.accesorios-secundario { 
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 0.51px;
+    color: #787878;
+    text-align: left;
+    font-family: var(--font-text);
+}
+
+span {
+    font-size: 40px;
+    color: var(--color-green); 
+    margin: 0;       
 }
 
 .img-carousel {
@@ -210,12 +179,6 @@ a {
     height: 344px !important;
     margin-top: 40px !important;
     color: var(--color-green) !important;    
-}
-
-span {
-    font-size: 40px;
-    color: var(--color-green); 
-    margin: 0;       
 }
 
 .bg-white {
@@ -274,25 +237,25 @@ span {
     transform: translate(-50%, -50%);
 }
 
-
 .player {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    
 }
 
-footer {    
-    height: 78px;
-    margin-left: 78px;
+
+footer {        
     background-color: var(--color-green);
 }
 
-
 .footer-list {
     display: flex;
-    margin-left: 0px;    
+    margin-left: 0px;
+    list-style: none;    
 }
+
+a {
+    text-decoration: none;
+}
+
 .footer-element {     
     list-style: none;
     margin-right: 35px;
@@ -321,3 +284,188 @@ footer img:hover {
     transition: 0.4s;
 }
 
+
+
+
+
+@media (max-width: 480px) {
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: var(--color-green);        
+        width: 100%;
+        display: none;
+    }
+
+    nav .lista {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 37px;
+        margin-left: 75%;
+    }
+
+    .titular {
+        margin-top: 25px;        
+    }
+    
+    .title-titular {
+        font-size: 45px;
+        color: var(--white);
+        letter-spacing: -0.05px;
+        line-height: 68px;
+        font-weight: normal; 
+    }
+    
+    .boton-titular {    
+        display: flex;    
+        align-items: center;
+        font-family: var(--font-text);
+        font-size: 13px;
+        letter-spacing: 1.01px;
+        font-weight: bold;
+        padding: 0;
+        background-color: transparent;
+        color: var(--white);
+        border-color: var(--white);
+        border-radius: 50px;     
+    }
+
+
+    .element-carousel {
+        position: relative;
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .tennis-titular {
+        font-family: var(--font-text);
+        font-size: 45px;
+        color: var(--color-green);
+        letter-spacing: -0.05px;
+        line-height: 68px;
+        font-weight: bold;    
+    }
+
+    .contenedor-historia {
+        flex-direction: column;                
+    }
+
+    .tennis-historia {
+        margin: 10px;
+        text-align: center;
+        font-size: 15px;        
+        font-weight: bold;    
+        color: var(--color-green);
+        letter-spacing: 1.87;
+        font-family: var(--font-text);
+    }
+    
+    .accesorios-primario { 
+        margin: 10px;                 
+        text-align: center;
+        font-family: var(--font-text);
+        font-size: 30px;
+        letter-spacing: -0.06px;
+        color: var(--black);
+    }
+    
+    .accesorios-secundario { 
+        margin: 20px;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 0.51px;
+        color: #787878;        
+        font-family: var(--font-text);
+    }
+
+    .col {    
+        width: 100%;
+    }
+
+    .boton-col {
+        margin: 20px;
+    }
+
+    span {
+        font-size: 40px;
+        color: var(--color-green); 
+        margin: 0;       
+    }
+    
+    .img-carousel {
+        width: 288px !important;
+        height: 344px !important;
+        margin-top: 40px !important;
+        color: var(--color-green) !important;            
+    }
+    
+    .img-carousel-2 {
+        width: 288px !important;
+        height: 344px !important;
+        margin-top: 40px !important;
+        color: var(--color-green) !important;    
+    }
+    
+    .bg-white {
+        background-color: var(--white);
+    }
+    
+    
+    .text-title-element {
+        font-size: 20px;
+        letter-spacing: -0.06px;        
+        text-align: left;
+        word-wrap: break-word;           
+        color: var(--white);
+        font-family: var(--font-text);
+        position: absolute;
+        top: 38px;
+        margin-left: 10px !important;        
+    }
+
+    .text-title-element-2 {
+        font-size: 20px;
+        letter-spacing: -0.06px;    
+        text-align: left;
+        word-wrap: break-word;           
+        color: var(--color-green);
+        font-family: var(--font-text);
+        position: absolute;
+        top: 38px;
+        left: 20px;    
+    }
+    .text-bold {
+        font-size: 20px !important;
+        font-weight: bold;
+        color: var(--white) !important;
+    }
+    .text-center-element {
+        font-size: 18px;
+        letter-spacing: -0.06px;
+        line-height: 20px;        
+        color: var(--white);
+        font-family: var(--font-text);
+        position: absolute;
+        top: 70%;        
+        transform: translate(-50%, -50%);
+    }
+    
+    .footer-list {
+        display: inline;
+        margin-left: 0px;
+        list-style: none;                    
+    }
+
+    .social-media {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+
+
+}
